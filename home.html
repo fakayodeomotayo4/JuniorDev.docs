@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+       }
+      .navbar{
+            padding: 22px;
+            border-bottom: 2px solid black;
+        }      
+        
+    
+        .header{
+            width: 100%;
+            display: flex;    
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        .header h1{
+            font-size: 22px;
+            font-weight: 800;
+            margin-left: 150px;
+            font-family: monospace;
+         
+        }
+
+        .span1{
+            color: grey; 
+        }
+
+
+        ul{
+            list-style-type: none;
+            display: flex;
+            text-decoration: none;
+          
+        }
+
+        ul li a{
+            display: flex;
+            margin-right: 20px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-family: monospace;
+            font-size: 17px;
+            font-weight: 500;
+            color: black;
+            text-decoration: none;
+
+        }
+
+        .home{
+            border-bottom: 1px solid black;
+        }
+
+        ul li a:hover{
+            border-bottom: 1px solid black;
+        }
+
+        .contribute{
+            margin-right: 250px;
+        }
+
+        .hero-section{
+            min-height: 65vh;
+        }
+
+        .hero-section h6{
+            font-family: monospace;
+            font-size: 15px;
+            color: grey; 
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 5px;
+
+        }
+
+        .hero-section h1{
+            font-family: monospace;
+            font-size: 80px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+          .hero-section p{
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgba(83, 81, 81, 0.925);
+            text-align: center;    
+            font-size: 20px;
+       }
+
+       .btn1{
+        background-color: black;
+        width: 200px;
+        padding: 15px;
+        border: none;
+        color: white;
+        font-family: monospace;
+        font-size: 15px;
+        margin-left: 470px;
+        margin-top: 30px;
+        cursor: pointer;
+       }
+
+
+       .btn1:hover{
+        background-color: white;
+        border: 2px solid black;
+        color: black;
+        font-family: monospace;
+        font-size: 15px;
+       }
+
+        .btn2{
+        background-color: white;
+        width: 170px;
+        padding: 15px;
+        font-size: 14px;
+        border: none;
+        border: 2px solid black;
+        font-family: monospace;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-top: -12px;
+
+       }
+
+       .hero-section2{
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        padding: 20px;
+       }
+
+       .hero-section2-flex{
+        display: flex;
+       }
+
+       .hero-section2-flex > div{
+        flex: 1;
+        text-align: center;
+        position: relative;
+        }
+
+        .hero-section2-flex > div:not(:first-child)::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -20px;
+        bottom: -20px;
+        width: 1px;
+        background: rgba(128, 128, 128, 0.801);
+        }
+
+       .hero-section2-info1 h1{
+        font-size: 40px;
+        font-family: monospace;
+        margin-left: 160px;
+       }
+
+       .hero-section2-info1 p{
+        font-size: 15px;
+        font-family: monospace;
+        color: rgba(83, 81, 81, 0.925);
+        margin-left: 150px;
+       }
+
+        .hero-section2-info2 h1{
+        font-size: 40px;
+        font-family: monospace;
+        margin-left: 40px;
+       }
+
+       .hero-section2-info2 p{
+        font-size: 15px;
+        font-family: monospace;
+        color: rgba(83, 81, 81, 0.925);
+        margin-left: 40px;
+       }
+
+        .hero-section2-info3 h1{
+        font-size: 40px;
+        font-family: monospace;
+        margin-left: 40px;
+       }
+
+       .hero-section2-info3 p{
+        font-size: 15px;
+        font-family: monospace;
+        color: rgba(83, 81, 81, 0.925);
+        margin-left: 40px;
+       }
+
+        .hero-section2-info4 h1{
+        font-size: 40px;
+        font-family: monospace;
+        margin-left: -140px;
+      
+       }
+
+       .hero-section2-info4 p{
+        font-size: 15px;
+        font-family: monospace;
+        color: rgba(83, 81, 81, 0.925);
+        margin-left: -140px;
+       }
+
+       .topic-info{
+        border-bottom: 2px solid black;
+        max-height: 90vh;
+       }
+
+       .topic-info h5{ 
+        font-family: monospace;
+        font-size: 15px;
+        color: rgba(53, 51, 51, 0.63);
+        font-weight: 400;
+        margin-left: 150px;
+        margin-bottom: 10px;
+        margin-top: 50px;
+       }
+
+        .topic-info h3{ 
+        font-family: monospace;
+        font-size: 40px;
+        margin-left: 150px;
+       }
+
+       .topic-grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 0;
+        margin: 150px;
+        height: 60vh;
+        margin-top: 40px;
+        
+       }
+
+       .topics{
+        border: 2px solid rgba(128, 128, 128, 0.247);
+        cursor: pointer;
+       }
+
+       .topics:hover{
+        background-color: rgba(128, 128, 128, 0.116);
+        border: 2px solid black;
+       }
+
+       .topics h1{
+        font-size: 25px;
+        font-family: monospace;
+        font-weight: 600;
+        margin-left: 30px;
+        margin-top: 80px;
+        margin-bottom: 10px;
+       }
+
+       .topics p{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgba(83, 81, 81, 0.925);
+        margin-left: 30px;
+        line-height: 1.6;
+       }
+
+       .docs-info{
+        max-height: 55vh;
+        border-bottom: 2px solid black;
+       }
+
+       .docs-info h5{
+        font-family: monospace;
+        font-size: 15px;
+        color: rgba(53, 51, 51, 0.63);
+        font-weight: 400;
+        margin-left: 150px;
+        margin-bottom: 10px;
+        margin-top: 50px;
+       }
+
+       .docs-info h3{
+        font-family: monospace;
+        font-size: 40px;
+        margin-left: 150px;
+       }
+
+       .docs-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+        margin: 170px;
+        margin-top: 20px;
+       }
+
+       .docs{
+       
+       border-left: 2px solid black;
+       }
+
+       .docs h1{
+        font-size: 25px;
+        font-family: monospace;
+        font-weight: 600;
+        margin-left: 30px;
+        margin-top: 80px;
+        margin-bottom: 10px;
+       }
+
+       .docs p{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgba(83, 81, 81, 0.925);
+        margin-left: 30px;
+        line-height: 1.6;
+       }
+
+       .tutorial-info{
+        min-height: 85vh;
+        border-bottom: 2px solid black;
+       }
+
+      .tutorial-info h5{   
+        font-family: monospace;
+        font-size: 15px;
+        color: rgba(53, 51, 51, 0.63);
+        font-weight: 400;
+        margin-left: 150px;
+        margin-bottom: 10px;
+        margin-top: 50px;
+       }
+
+      .tutorial-info h3{   
+        font-family: monospace;
+        font-size: 40px;
+        margin-left: 150px;
+       }
+
+       .tutorial-box{
+        border: 2px solid black;
+        width: 50%;
+        min-height: 60vh;
+        margin-left: 150px;
+        margin-top: 30px;
+       }
+
+       .tutorial-box h2{
+        font-size: 15px;
+        margin-left: 30px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-weight: 400;
+        color: rgba(53, 51, 51, 0.63);
+        font-family: Arial, Helvetica, sans-serif
+       
+         
+       }
+
+       .tutorial-box h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        margin-left: 30px;
+        font-weight: 400;
+       }
+
+       .tutorial-box1{
+        background-color: rgba(128, 128, 128, 0.13);
+        width: 91%;
+        margin: auto;
+        min-height: 20vh;
+        margin-top: 20px;
+        border: 1px solid rgba(128, 128, 128, 0.349);
+       }
+
+       .tutorial-box1 p{
+        font-size: 15px;
+        font-family: monospace;
+       }
+
+       .tutorial-box2{
+        width: 91%;
+        background-color: rgba(128, 128, 128, 0.13);
+        min-height: 10vh;
+        margin: auto;
+        border-left: 5px solid black;
+        margin-top: 30px;
+       }
+
+       .tutorial-box2 h1{
+        padding-top: 15px;
+        padding-bottom: 12px;
+        margin-left: 10px;
+        font-size: 12px;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+
+        .tutorial-box2 p{
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        margin-left: 12px;
+       }
+
+       .contribute-info{
+        min-height: 20vh;
+       }
+
+        .contribute-info h3{
+        font-family: monospace;
+        font-size: 40px;
+        margin-left: 150px;
+        margin-top: 20px;
+       }
+
+        .contribute-flex{
+        display: flex;
+       }
+
+        .contribute-flex h5{
+        font-family: monospace;
+        font-size: 20px;
+        color: rgba(53, 51, 51, 0.63);
+        font-weight: 400;
+        margin-left: 150px;
+        margin-bottom: 10px;
+        margin-top: 15px;
+       }
+
+       .contribute-flex button{
+        background-color: black;
+        width: 200px;
+        border: none;
+        color: white;
+        font-family: monospace;
+        font-size: 15px;
+        margin-left: 300px;
+        margin-top: -20px;
+        cursor: pointer;
+       }
+
+       .contribute-flex button:hover{
+        background-color: white;
+        border: 2px solid black;
+        color: black;
+        font-family: monospace;
+        font-size: 15px;
+       }
+
+       footer{
+        min-height: 10vh;
+        border-top: 1px solid rgba(128, 128, 128, 0.486);
+
+       }
+
+       footer p{
+        padding-top: 30px;
+        color: rgb(97, 94, 94);
+        font-family: monospace;
+        font-size: 13px;
+        margin-left: 150px;
+
+       }
+
+
+       
+
+     
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="header">
+          <h1>JuniorDev.<span class="span1">docs</span></h1>
+            <ul>
+                <li><a href="home" class="home">HOME</a></li>
+                <li><a href="tutorial">TUTORIALS</a></li>
+                <li><a href="cheatsheet">CHEAT SHEET</a></li>
+                <li><a href="contribute" class="contribute">CONTRIBUTE</a></li>
+
+            </ul>
+          
+        </div>
+    </nav>
+
+   <div class="hero-section">                                       
+        <h6>WELCOME TO</h6>
+        <h1>JuniorDev Docs</h1>
+
+        <p>The "missing" documentation. Real explanations for real beginners. <br>No jargon, no assumptions, no nonsense.</p>
+        <button class="btn1">START LEARNING &#8594;</button>
+        <button class="btn2">CHEAT SHEET</button>
+   </div>
+
+   <div class="hero-section2">
+        <div class="hero-section2-flex">
+            <div class="hero-section2-info1">
+                <h1>6+</h1>
+                <p>Topics Covered</p>
+               
+            </div>
+
+            <div class="hero-section2-info2">
+                <h1>100%</h1>
+                <p>Free Forever</p>
+             
+            </div>
+
+            <div class="hero-section2-info3">
+                <h1>0</h1>
+                <p>Jargon Used</p>
+              
+            </div>
+
+            <div class="hero-section2-info4">
+                <h1>∞</h1>
+                <p>Patience</p>
+                <div></div>
+            </div>
+        </div>
+   </div>
+
+   <div class="topic-info">
+        <h5>BROWSE</h5>
+        <h3>Topics</h3>
+
+       <div class="topic-grid"> 
+            <div class="topics">
+                <h1>CSS Flexbox</h1>
+                <p>Learn flexible layouts without the <br> headache. Align, 
+                distribute, and order <br> elements with ease.</p> 
+            </div>
+
+            <div class="topics">
+                <h1>Git Basics</h1>
+                <p>stop being afraid of the terminal. <br> Commits,branches, and merges <br> explained simply.</p>
+            </div>
+
+            <div class="topics">
+                <h1>Command Line</h1>
+                <p>Navigate your file system, run scripts, <br> and feel like a real developer.</p>
+            </div>
+
+            <div class="topics">
+                <h1>JavaScript Arrays</h1>
+                <p>map, filter, reduce — the three <br> methods that will change your life.</p>
+            </div>
+
+            <div class="topics">
+                <h1>HTML Semantics </h1>
+                <p>Why [div] isn't always the answer. <br> Write markup that means something.</p>
+            </div>
+
+            <div class="topics">
+                <h1>CSS Box Model</h1>
+                <p>Padding, margin, border — finally <br> understand why your layout is broken.</p>
+            </div>
+       </div>
+   </div>
+
+   <div class="docs-info">
+        <h5>PHILOSOPHY</h5>
+        <h3>How We Write Docs</h3>
+        <div class="docs-grid">
+            <div class="docs">
+                <h1>No Assumptions</h1>
+                <p>We start from scratch. If you know <br> nothing, that's perfect — you're our <br> target audience.</p>
+            </div>
+
+            <div class="docs">
+                <h1>Examples First</h1>
+                <p>Every concept starts with working <br> code. Theory comes after you see it in <br> action.</p>
+            </div>
+
+            <div class="docs">
+                <h1>By Students</h1>
+                <p>Written by people who just learned this <br> stuff. 
+                We remember what's confusing <br> because we were confused last week</p>
+            </div>  
+
+         
+        </div>
+   </div>
+
+   <div class="tutorial-info">
+        <h5>Preview</h5>
+        <h3>What Our Tutorials Look Like</h3>
+        <div class="tutorial-box"> 
+            <h2>From our CSS Flexbox tutorial:</h2>
+            <h1>To perfectly center a div, you only need three lines:</h1>
+            <div class="tutorial-box1"> 
+                <p>
+                   
+                        .container { <br>
+                        display: flex;<br>
+                        justify-content: center;<br>
+                        align-items: center;  <br>
+                        }
+                   
+                </p>
+            </div>
+
+            <div class="tutorial-box2">
+                <h1>NOTE</h1>
+                <p>
+                    This replaces dozens of old centering hacks. One pattern to rule them all.
+                </p>
+            </div>
+            
+        </div>
+   </div>
+
+   <div class="contribute-info">
+        <h3>Want to contribute?</h3>
+        <div class="contribute-flex">
+            <h5>Found an error or have a topic in mind? We'd love your help.</h5>
+            <button>CONTRIBUTE  &#8594;</button>
+        </div>
+   </div>
+
+   <footer>
+       <p>© 2026 JuniorDev Docs — Built by students, for students.</p>
+   </footer>
+</body>
+</html>

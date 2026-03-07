@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+       }
+      .navbar{
+            padding: 22px;
+            border-bottom: 2px solid black;
+        }      
+        
+    
+        .header{
+            width: 100%;
+            display: flex;    
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        .header h1{
+            font-size: 22px;
+            font-weight: 800;
+            margin-left: 150px;
+            font-family: monospace;
+         
+        }
+
+        .span1{
+            color: grey; 
+        }
+
+
+        ul{
+            list-style-type: none;
+            display: flex;
+            text-decoration: none;
+          
+        }
+
+        ul li a{
+            display: flex;
+            margin-right: 20px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-family: monospace;
+            font-size: 17px;
+            font-weight: 500;
+            color: black;
+            text-decoration: none;
+
+        }
+
+        .tutorial{
+            border-bottom: 1px solid black;
+        }
+
+        ul li a:hover{
+            border-bottom: 1px solid black;
+        }
+
+        .contribute{
+            margin-right: 250px;
+        }
+
+        .hero-section{}
+
+        .back-to-topic-symbol{
+            margin-right: 10px;
+        }
+
+        .hero-section h3{
+            font-size: 18px;
+            font-family: monospace;
+            color: rgba(49, 48, 48, 0.74); 
+            font-weight: 500;
+            margin-left: 300px;
+            margin-top: 50px;
+        }
+
+        .hero-section h4{
+            font-size: 15px;
+            font-family: monospace;
+            color: rgba(49, 48, 48, 0.74); 
+            font-weight: 500;
+            margin-left: 300px;
+            margin-top: 20px;
+            
+        }
+
+        .hero-section h1{
+            font-size: 50px;
+            font-family: monospace;
+            margin-left: 305px;
+            margin-top: 10px;
+          
+            
+        }
+
+        .hero-section p{
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgba(49, 48, 48, 0.562); 
+            margin-left: 300px;
+            font-weight: 530;
+            margin-top: 10px;
+        }
+
+        .border1{
+            width: 52%;
+            border-top: 1px solid rgba(128, 128, 128, 0.377);
+            margin-left: 300px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+
+        .flex-box h1{
+            font-size: 30px;
+            font-family: monospace;
+        }
+
+        .flex-box
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="header">
+          <h1>JuniorDev.<span class="span1">docs</span></h1>
+            <ul>
+                <li><a href="home">HOME</a></li>
+                <li><a href="tutorial" class="tutorial">TUTORIALS</a></li>
+                <li><a href="cheatsheet">CHEAT SHEET</a></li>
+                <li><a href="contribute" class="contribute">CONTRIBUTE</a></li>
+
+            </ul>
+          
+        </div>
+    </nav>
+    <div class="hero-section">
+        <h3><span class="back-to-topic-symbol">&#8592;</span>BACK TO TOPICS</h3>
+        <h4>TUTORIAL</h4>
+        <h1>CSS Flexbox</h1>
+        <p>The complete beginner's guide to flexible layouts.
+        No prior CSS layout knowledge required.</p>
+
+        <div class="flex-box">
+            <div class="border1"></div>
+            <h1>What is Flexbox?</h1>
+            <p>Flexbox is a CSS layout method that lets you arrange items in a row 
+            or column. It handles spacing, alignment, and ordering — all the things
+            that used to require hacks with floats and positioning.</p>
+
+            <div class="note">
+                <h1>NOTE</h1>
+                <p>Flexbox works in one dimension at a time — either
+                a row or a column. If you need two-dimensional layouts, 
+                look into CSS Grid.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
