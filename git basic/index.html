@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+       }
+      .navbar{
+            padding: 22px;
+            border-bottom: 2px solid black;
+        }      
+        
+    
+        .header{
+            width: 100%;
+            display: flex;    
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        .header h1{
+            font-size: 22px;
+            font-weight: 800;
+            margin-left: 150px;
+            font-family: monospace;
+         
+        }
+
+        .span1{
+            color: grey; 
+        }
+
+
+        ul{
+            list-style-type: none;
+            display: flex;
+            text-decoration: none;
+          
+        }
+
+        ul li a{
+            display: flex;
+            margin-right: 20px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-family: monospace;
+            font-size: 17px;
+            font-weight: 500;
+            color: black;
+            text-decoration: none;
+
+        }
+
+        .tutorial{
+            border-bottom: 1px solid black;
+        }
+
+        ul li a:hover{
+            border-bottom: 1px solid black;
+        }
+
+        .contribute{
+            margin-right: 250px;
+        }
+
+
+        .back-to-topic-symbol{
+            margin-right: 10px;
+        }
+
+        .hero-section h3{
+            font-size: 18px;
+            font-family: monospace;
+            color: rgba(49, 48, 48, 0.74); 
+            font-weight: 500;
+            margin-left: 300px;
+            margin-top: 50px;
+        }
+
+        .hero-section h4{
+            font-size: 15px;
+            font-family: monospace;
+            color: rgba(49, 48, 48, 0.74); 
+            font-weight: 500;
+            margin-left: 300px;
+            margin-top: 20px;
+            
+        }
+
+        .hero-section h1{
+            font-size: 50px;
+            font-family: monospace;
+            margin-left: 305px;
+            margin-top: 10px;
+          
+            
+        }
+
+        .hero-section p{
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgba(49, 48, 48, 0.685); 
+            margin-left: 305px;
+            margin-top: 10px;
+        }
+
+        .border1{
+            width: 52%;
+            border-top: 1px solid rgba(128, 128, 128, 0.377);
+            margin-left: 300px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+
+        .git h1{
+            font-size: 28px;
+            font-family: monospace;
+           
+        }
+
+        .git p{
+            font-size: 17px;
+            color: black;
+            margin-left: 307px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .note{
+            background-color: rgba(128, 128, 128, 0.13);
+            margin-top: 40px;
+            width: 51%;
+            height: 15vh;
+            margin-left: 310px;
+            border-left: 4px solid black;
+          
+        }
+
+        .note h1{
+            margin-left: 10px;
+            font-size: 15px;
+            font-family: monospace;
+            padding-top: 20px;
+        }
+
+        .note p{
+            margin-left: 10px;
+            font-size: 15px;
+            margin-bottom: 10px;
+          
+        }
+
+        .setting h1{ 
+            margin-top: 50px;
+            font-size: 28px;
+            font-family: monospace;
+           
+        }
+
+        .setting p{
+            font-size: 17px;
+            color: black;
+            margin-left: 307px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        .setting-div{ 
+            background-color: rgba(128, 128, 128, 0.13);
+            margin-top: 10px;
+            padding-top: 20px;
+            padding-left: 15px;
+            width: 51%;
+            height: 25vh;
+            margin-left: 310px;
+            font-size: 17px;
+            font-family: monospace;
+            border: 1px solid rgba(128, 128, 128, 0.664);
+        }
+
+        .repository-info h1{ 
+            margin-top: 50px;
+            font-size: 28px;
+            font-family: monospace;
+           
+        }
+
+        .repository-info p{ 
+            font-size: 17px;
+            color: black;
+            line-height: 1.8;
+            margin-left: 307px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .repository-div{
+            background-color: rgba(128, 128, 128, 0.13);
+            margin-top: 10px;
+            padding-top: 20px;
+            padding-left: 15px;
+            width: 51%;
+            height: 27vh;
+            margin-left: 310px;
+            font-size: 17px;
+            font-family: monospace;
+            border: 1px solid rgba(128, 128, 128, 0.664);
+        }
+
+        .core-info h1{ 
+            margin-top: 50px;
+            font-size: 28px;
+            font-family: monospace;
+           
+        }
+
+        .core-info p{ 
+            font-size: 17px;
+            color: black;
+            margin-left: 307px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .core-div{ 
+            background-color: rgba(128, 128, 128, 0.13);
+            margin-top: 10px;
+            padding-top: 10px;
+            padding-left: 15px;
+            width: 51%;
+            height: 50vh;
+            margin-left: 310px;
+            font-size: 17px;
+            font-family: monospace;
+            border: 1px solid rgba(128, 128, 128, 0.664);;
+        }
+
+        .pro-tip-info h1{ 
+            margin-left: 10px;
+            font-size: 15px;
+            font-family: monospace;
+            padding-top: 10px;
+        }
+
+        .pro-tip-info p{ 
+            margin-top: 5px;
+            margin-left: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+
+        .pro-tip-info{ 
+            background-color: rgba(128, 128, 128, 0.13);
+            margin-top: 40px;
+            width: 51%;
+            height: 17vh;
+            margin-left: 310px;
+            border-left: 4px solid black;
+        }
+
+        .branches-info h1{ 
+            margin-top: 50px;
+            font-size: 28px;
+            font-family: monospace;
+           
+        }
+
+        .branches-info p{ 
+            font-size: 17px;
+            color: black;
+            line-height: 1.8;
+            margin-left: 307px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .branches-div{
+           background-color: rgba(128, 128, 128, 0.13);
+            margin-top: 10px;
+            padding-top: 20px;
+            padding-left: 15px;
+            width: 51%;
+            height: 57vh;
+            margin-left: 305px;
+            font-size: 17px;
+            font-family: monospace;
+            border: 1px solid rgba(128, 128, 128, 0.664)
+        }
+
+    
+
+       
+
+        .remote-info h1{ 
+            margin-top: 10px;
+            font-size: 23px;
+            font-family: monospace;
+           
+        }
+
+        .remote-div{
+            background-color: rgba(128, 128, 128, 0.13);
+            margin-top: 10px;
+            padding-top: 20px;
+            padding-left: 15px;
+            width: 51%;
+            height: 33vh;
+            margin-left: 305px;
+            font-size: 17px;
+            font-family: monospace;
+            border: 1px solid rgba(128, 128, 128, 0.664);
+        }
+
+        .mistake-info h1{ 
+            margin-top: 50px;
+            font-size: 23px;
+            font-family: monospace;
+           
+        }
+
+       
+        .mistake-div{
+           background-color: rgba(128, 128, 128, 0.13);
+            margin-top: 10px;
+            padding-top: 20px;
+            padding-left: 15px;
+            width: 51%;
+            height: 40vh;
+            margin-left: 305px;
+            font-size: 17px;
+            font-family: monospace;
+            border: 1px solid rgba(128, 128, 128, 0.664)
+        }
+
+
+         .warning-info h1{ 
+            margin-left: 10px;
+            font-size: 15px;
+            font-family: monospace;
+            padding-top: 10px;
+        }
+
+        .warning-info p{ 
+            margin-top: 5px;
+            margin-left: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+
+        .warning-info{ 
+            background-color: rgba(128, 128, 128, 0.13);
+            margin-top: 40px;
+            width: 51%;
+            height: 15vh;
+            margin-left: 310px;
+            border-left: 4px solid black;
+        }
+
+       
+
+        .last-flex{
+            display: flex;
+            background-color: white;
+            margin-top: 70px;
+            width: 51%;
+            height: 15vh;
+            margin-left: 305px;
+            border-top: 2px solid black;
+        }
+
+        .last-flex p{
+            color: black;
+            margin-left: -2px;
+            margin-top: 40px;
+            font-size: 18px;
+            font-family: monospace;
+        }
+
+        .last-flex:hover{
+            text-decoration: underline;
+        }
+
+        .array{
+            margin-left: 445px;
+        }
+        
+
+
+
+
+
+    </style>
+</head>
+<body>
+   
+        <nav class="navbar">
+            <div class="header">
+            <h1>JuniorDev.<span class="span1">docs</span></h1>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../tutorial/" class="tutorial">TUTORIALS</a></li>
+                    <li><a href="../cheatsheet/">CHEAT SHEET</a></li>
+                    <li><a href="../contribute/" class="contribute">CONTRIBUTE</a></li>
+
+                </ul>
+            
+            </div>
+        </nav>
+  
+    <div class="hero-section" >
+        <h3><span class="back-to-topic-symbol">&#8592;</span>BACK TO TOPICS</h3>
+        <h4>TUTORIAL</h4>
+        <h1>Git Basics</h1>
+        <p>Everything you need to stop being afraid of version control. 
+            From zero to confident in one read.
+        </p>
+
+        <div class="git">
+            <div class="border1"></div>
+            <h1 id="basics">What is Git?</h1>
+            <p>Git is a version control system. Think of it as 
+                "save points" for your code. Every time you <br>make meaningful progress, 
+                you save a snapshot. If you break something, you can go back.
+            </p>
+
+            <div class="note">
+                <h1>NOTE</h1>
+                <p>Git is <strong>not</strong> the same as GitHub.Git is the tool that tracks changes. 
+                    GitHub is a website that hosts Git repositories online.
+                </p>
+            </div>
+        </div>
+
+        <div class="setting">
+            <h1>Setting Up</h1>
+            <p>After installing Git, configure your identity. 
+                This is attached to every save point you make.
+            </p>
+
+            <div class="setting-div">
+               git config --global user.name "Your Name"<br>
+               git config --global user.email "you@email.com"<br><br><br>
+
+                # Verify your setup <br>
+                git config --list
+            </div>
+
+        </div>
+
+        <div class="repository-info">
+            <h1 >Starting a Repository</h1>
+            <p>
+                A repository (repo) is a folder that Git is tracking. Two ways to start:
+            </p>
+
+            <div class="repository-div">
+               # Option 1: Start tracking an existing folder <br>
+                cd my-project <br>
+                git init <br><br>
+
+                # Option 2: Clone someone else's repo <br>
+                git clone https://github.com/user/repo.git
+            </div>
+
+        </div>
+
+        <div class="core-info">
+            <h1>The Core Workflow</h1>
+            <p>Git has three "zones" your files move through:</p>
+
+            <div class="core-div">
+              # Check what's changed <br>
+                git status <br><br>
+
+                # Stage specific files <br>
+                git add filename.txt <br><br>
+
+                # Stage everything <br>
+                git add . <br><br>
+
+                # Save a snapshot (commit) <br>
+                git commit -m "Describe what you changed" <br><br>
+
+                # View your history <br>
+                git log --oneline
+            </div>
+
+            <div class="pro-tip-info">
+                <h1>Pro Tip</h1>
+                <p>Write commit messages in the imperative: "Add login form" not "Added login form."
+                     Think of it as completing the sentence: "This commit will..."
+                </p>
+            </div>
+
+        </div>
+
+        <div class="branches-info">
+            <h1>Branches</h1>
+            <p>Branches let you work on features without messing up the main code. 
+                Think of them as <br> parallel timelines.
+            </p>
+
+            <div class="branches-div">
+               # Create and switch to a new branch <br>
+                git checkout -b feature-name<br><br>
+
+                # Switch between branches<br>
+                git checkout main<br>
+                git checkout feature-name<br><br>
+
+                # See all branches<br>
+                git branch<br><br>
+
+                # Merge a branch into main<br>
+                git checkout main<br>
+                git merge feature-name<br><br>
+
+                # Delete a branch after merging<br>
+                git branch -d feature-name
+            </div>
+        </div>
+
+
+
+        <div class="remote-info">
+            <h1>Working with Remote (GitHub)</h1>
+            <p>Push your local code to a remote server so others can see it:</p>
+           
+            <div class="remote-div">
+              # Connect to a remote repository <br>
+                git remote add origin https://github.com/user/repo.git<br><br>
+
+                # Push your code<br>
+                git push -u origin main<br><br>
+
+                # Pull changes others have made<br>
+                git pull origin main
+            </div>
+        </div>
+
+        <div class="mistake-info">
+            <h1>Undoing Mistakes</h1>
+            <p>Everyone messes up. Here's how to fix it:</p>
+           
+            <div class="mistake-div" id="Mistakes">
+               # Undo changes to a file (before staging) <br>
+                git checkout -- filename.txt<br><br>
+
+                # Unstage a file (keep changes)<br>
+                git reset HEAD filename.txt<br><br>
+
+                # Undo the last commit (keep changes)<br>
+                git reset --soft HEAD~1<br><br>
+
+                # Undo the last commit (discard changes) ⚠️<br>
+                git reset --hard HEAD~1
+            </div>
+        </div>
+
+
+        <div class="warning-info">
+            <h1>Warning</h1>
+            <p>--hard permanently deletes changes. Use with extreme caution. 
+                When in doubt, use --soft.
+            </p>
+        </div>
+
+        <div class="last-flex"> 
+            <p> &#8592; ALL TOPICS</p>
+            <p> <span class="array">JS Arrays &#8594;</span> </p> 
+        </div>
+
+
+    </div>
+</body>
+</html>

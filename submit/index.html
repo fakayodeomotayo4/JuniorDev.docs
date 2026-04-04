@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+       }
+      .navbar{
+            padding: 22px;
+            border-bottom: 2px solid black;
+        }      
+        
+    
+        .header{
+            width: 100%;
+            display: flex;    
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        .header h1{
+            font-size: 22px;
+            font-weight: 800;
+            margin-left: 150px;
+            font-family: monospace;
+         
+        }
+
+        .span1{
+            color: grey; 
+        }
+
+
+        ul{
+            list-style-type: none;
+            display: flex;
+            text-decoration: none;
+          
+        }
+
+        ul li a{
+            display: flex;
+            margin-right: 20px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-family: monospace;
+            font-size: 17px;
+            font-weight: 500;
+            color: black;
+            text-decoration: none;
+
+        }
+
+       
+
+        ul li a:hover{
+            border-bottom: 1px solid black;
+        }
+
+        .contribute{
+            margin-right: 250px;
+            border-bottom: 1px solid black;
+            
+        }
+
+        .submit{
+            border: 2px solid black;
+            width: 50%;
+            height: 50vh;
+            margin-left: 350px;
+            margin-top: 70px;
+        }
+
+        .submit h2{ 
+            margin-top: 50px;
+            font-size: 28px;
+            font-family: monospace;
+            text-align: center;
+           
+        }
+
+        .submit h1{
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgba(49, 48, 48, 0.726); 
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .submit p{
+            color: black;
+            margin-left: -2px;
+            margin-top: 40px;
+            font-size: 18px;
+            font-family: monospace;
+            text-align: center;
+          
+            
+        }
+
+         .submit, a, p{
+            text-decoration: none;
+        }
+
+        .submit p:hover{
+            text-decoration: underline;
+        }
+
+
+        .check{
+            font-size: 50px;
+            margin-left: 320px;
+        }
+
+        .check-align{
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="header">
+            <h1>JuniorDev.<span class="span1">docs</span></h1>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../tutorial/"  >TUTORIALS</a></li>
+                <li><a href="../cheatsheet/">CHEAT SHEET</a></li>
+                <li><a href="../contribute/" class="contribute">CONTRIBUTE</a></li>
+
+            </ul>
+            
+        </div>
+    </nav>
+
+    <div class="submit" id="submit">
+        <div class="check-align">
+         <h3><span class="check">✓</span></h3>
+        </div>
+        <h2>Submission Received</h2>
+        <h1>Thanks for helping make docs better for everyone.</h1>
+        <a href="../index.html">
+         <p>← Back to Home</p>
+        </a>
+    </div>
+  
+</body>
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+       }
+      .navbar{
+            padding: 22px;
+            border-bottom: 2px solid black;
+        }      
+        
+    
+        .header{
+            width: 100%;
+            display: flex;    
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        .header h1{
+            font-size: 22px;
+            font-weight: 800;
+            margin-left: 150px;
+            font-family: monospace;
+         
+        }
+
+        .span1{
+            color: grey; 
+        }
+
+
+        ul{
+            list-style-type: none;
+            display: flex;
+            text-decoration: none;
+          
+        }
+
+        ul li a{
+            display: flex;
+            margin-right: 20px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-family: monospace;
+            font-size: 17px;
+            font-weight: 500;
+            color: black;
+            text-decoration: none;
+
+        }
+
+        .cheat{
+            border-bottom: 1px solid black;
+        }
+
+        ul li a:hover{
+            border-bottom: 1px solid black;
+        }
+
+        .contribute{
+            margin-right: 250px;
+        }
+
+        .back-to-topic-symbol{
+            margin-right: 10px;
+        }
+
+        .hero-section{
+            min-height: 215vh;
+        }
+
+        .hero-section h3{
+            font-size: 18px;
+            font-family: monospace;
+            color: rgba(49, 48, 48, 0.74); 
+            font-weight: 500;
+            margin-left: 200px;
+            margin-top: 50px;
+        }
+
+        .hero-section h4{
+            font-size: 15px;
+            font-family: monospace;
+            color: rgba(49, 48, 48, 0.74); 
+            font-weight: 500;
+            margin-left: 200px;
+            margin-top: 20px;
+            text-transform:uppercase;
+            
+        }
+
+        .hero-section h1{
+            font-size: 50px;
+            font-family: monospace;
+            margin-left: 205px;
+            margin-top: 10px;
+          
+            
+        }
+
+        .hero-section p{
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgba(49, 48, 48, 0.685); 
+            margin-left: 200px;
+            margin-top: 10px;
+        }
+
+        input{
+            width: 930px;
+            margin-left: 200px;
+            margin-top: 30px;
+            padding: 20px;
+            border: 2px solid black;
+             
+        }
+
+        input::placeholder{
+            font-size: 18px;
+            font-family: monospace;
+            padding-left: 20px;
+        }
+
+        .up{
+            width: 68%;
+            border-top: 2px solid black;
+            margin-left: 200px;
+            margin-top: 20px;
+            
+        }
+
+        .container h1{
+           font-size: 28px;
+           margin-top: 30px;
+        }
+
+        .down{
+            width: 68%;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.329);
+            margin-left: 200px;
+            margin-top: 10px;
+        }
+
+        table{
+            margin-left: 200px;
+            margin-top: 30px;
+            border-collapse: collapse;
+        }
+
+       th{
+            border-bottom: 2px solid black;
+            text-align:left;
+            
+           
+        }
+
+        td{
+            padding: 10px;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.329);
+            text-align:left;
+        
+        }
+
+        tr:hover{
+            background-color: rgba(102, 102, 102, 0.055);
+        }
+
+        .values{
+            color: rgba(73, 69, 69, 0.918);
+            font-family:monospace;
+            font-size: 13px;
+            font-weight: 200;
+        }
+
+        .description{
+            color: rgb(102, 102, 102);
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .property{
+            font-family: monospace;
+            max-height: 2vh;
+            padding: 4px;
+            background-color:  rgba(102, 102, 102, 0.068);
+            border: 1px solid rgba(128, 128, 128, 0.329);
+            font-size: 14px;
+          
+        }
+
+        .last-flex{
+            display: flex;
+            background-color: white;
+            margin-top: 70px;
+            width: 68%;
+            height: 15vh;
+            margin-left: 200px;
+            border-top: 2px solid black;
+        }
+
+        .last-flex p{
+            color: black;
+            margin-left: -2px;
+            margin-top: 40px;
+            font-size: 18px;
+            font-family: monospace;
+        }
+
+        .last:hover{
+            text-decoration: underline;
+        }
+
+        .last-flex a{
+            text-decoration: none;
+        }
+
+
+        .Sheet {
+            margin-left: 670px;
+        }
+
+        .Sheet:hover{
+            text-decoration: underline;
+        }
+        
+
+
+
+
+
+    </style>
+</head>
+<body>
+  
+        <nav class="navbar">
+            <div class="header">
+            <h1>JuniorDev.<span class="span1">docs</span></h1>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../tutorial/">TUTORIALS</a></li>
+                    <li><a href="../cheatsheet/" class="cheat">CHEAT SHEET</a></li>
+                    <li><a href="../contribute/" class="contribute">CONTRIBUTE</a></li>
+
+                </ul>
+            
+            </div>
+        </nav>
+  
+
+    <div class="hero-section" >
+        <h3><span class="back-to-topic-symbol">&#8592;</span>BACK TO TOPICS</h3>
+        <h4>Reference</h4>
+        <h1>Flexbox Cheat Sheet</h1>
+        <p>Every Flexbox property in one place. Search or scroll.</p>
+
+
+      <div class="Search" id="Search">
+         <input type="text" placeholder="Search properties.....">
+      </div>
+
+      <div class="container">
+            <div class="up"></div>
+            <h1>Container Properties </h1>
+            <div class="down"></div>
+       </div>
+
+       <table style="width: 68%;">
+        <tr>
+            <th style="width: 15%;">PROPERTY</th>
+            <th style="width: 40%;">VALUES</th>
+            <th style="width: 20%;">DESCRIPTION</th>
+        </tr>
+
+        <tr>
+            <td><span class="property">display</span></td>
+            <td class="values">flex | inline-flex</td>
+            <td class="description">Defines a flex container</td>
+        </tr>
+
+        <tr>
+            <td><span class="property">flex-direction</span></td>
+            <td class="values">row | column | row-reverse | column-reverse</td> 
+            <td class="description">Sets the main axis direction</td>
+        </tr>
+
+        <tr>
+            <td><span  class="property">flex-wrap</span></td>
+            <td class="values">nowrap | wrap | wrap-reverse</td>
+            <td class="description">	Controls whether items wrap to new <br>lines</td>
+        </tr>
+
+        <tr>
+            <td  ><span class="property">justify-<br>content</span> </td>
+            <td class="values">flex-start | flex-end | center | space-between | space-around | space- <br>evenly</td>
+            <td class="description">Aligns items along the main axis</td>
+        </tr>
+
+        <tr>
+            <td ><span class="property">align-items</span></td> 
+            <td class="values">	stretch | flex-start | flex-end | center | baseline</td>
+            <td class="description">Aligns items along the cross axis</td>
+        </tr>
+
+        <tr>
+            <td ><span class="property">align-content</span></td>
+            <td class="values">	stretch | flex-start | flex-end | center | space-between | space-around</td>
+            <td class="description">Aligns rows when wrapping</td>
+        </tr>
+
+        <tr>
+            <td ><span class="property">gap</span></td>
+            <td class="values">	< length ></td>
+            <td class="description">Sets spacing between flex items</td>
+        </tr>
+
+
+      
+       <table style="width: 68%;" id="shit">
+          <br><br>
+           <div class="container">
+                <h1>Items Properties </h1>
+                <div class="down"></div>
+           </div>
+        <tr>
+            <th style="width: 15%;">PROPERTY</th>
+            <th style="width: 40%;">VALUES</th>
+            <th style="width: 20%;">DESCRIPTION</th>
+        </tr>
+
+        <tr>
+            <td><span class="property">flex-grow</span></td>
+            <td class="values">< number ></td>
+            <td class="description">How much an item grows relative to siblings</td>
+        </tr>
+
+        <tr>
+            <td><span class="property">flex-shrink</span></td>
+            <td class="values">< number ></td> 
+            <td class="description">How much an item shrinks relative to siblings</td>
+        </tr>
+
+        <tr>
+            <td><span class="property">flex-basis</span></td>
+            <td class="values">< length > | auto</td>
+            <td class="description">The initial size before growing or shrinking</td>
+        </tr>
+
+        <tr>
+            <td><span class="property">flex</span></td>
+            <td class="values">< grow > < shrink > < basis ></td>
+            <td class="description">Shorthand for grow, shrink, and basis</td>
+        </tr>
+
+        <tr>
+            <td><span class="property">align-self</span></td>
+            <td class="values">auto | flex-start | flex-end | center | stretch | baseline</td>
+            <td class="description">Overrides align-items for one item</td>
+        </tr>
+
+        <tr>
+             <td><span class="property">order</span></td>
+            <td class="values">< integer ></td>
+            <td class="description">Changes visual order without changing DOM</td>
+        </tr>
+
+         
+
+       </table>
+
+        <div class="last-flex"> 
+            <a href="../tutorial/#direction">
+             <p class="last"> &#8592; TUTORIAL</p>
+            </a>
+
+            <a href="../contribute/#topic">
+             <p> <span class="Sheet"> CONTRIBUTE &#8594;</span> </p>
+            </a> 
+        </div>
+
+    </div>
+</body>
+</html>

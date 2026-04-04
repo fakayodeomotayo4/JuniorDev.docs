@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+       }
+      .navbar{
+            padding: 22px;
+            border-bottom: 2px solid black;
+        }      
+        
+    
+        .header{
+            width: 100%;
+            display: flex;    
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        .header h1{
+            font-size: 22px;
+            font-weight: 800;
+            margin-left: 150px;
+            font-family: monospace;
+         
+        }
+
+        .span1{
+            color: grey; 
+        }
+
+
+        ul{
+            list-style-type: none;
+            display: flex;
+            text-decoration: none;
+          
+        }
+
+        ul li a{
+            display: flex;
+            margin-right: 20px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-family: monospace;
+            font-size: 17px;
+            font-weight: 500;
+            color: black;
+            text-decoration: none;
+
+        }
+
+       
+
+        ul li a:hover{
+            border-bottom: 1px solid black;
+        }
+
+        .contribute{
+            margin-right: 250px;
+            border-bottom: 1px solid black;
+            
+        }
+
+
+        .back-to-topic-symbol{
+            margin-right: 10px;
+        }
+
+        .hero-section h3{
+            font-size: 18px;
+            font-family: monospace;
+            color: rgba(49, 48, 48, 0.74); 
+            font-weight: 500;
+            margin-left: 300px;
+            margin-top: 50px;
+        }
+
+        .hero-section h4{
+            font-size: 15px;
+            font-family: monospace;
+            color: rgba(49, 48, 48, 0.74); 
+            font-weight: 500;
+            margin-left: 300px;
+            margin-top: 20px;
+            
+        }
+
+        .hero-section h1{
+            font-size: 50px;
+            font-family: monospace;
+            margin-left: 305px;
+            margin-top: 10px;
+          
+            
+        }
+
+        .hero-section p{
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgba(49, 48, 48, 0.685); 
+            margin-left: 305px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+
+       #name{
+            width: 270px;
+            padding: 15px;
+            border: 2px solid black;
+            margin-right: 50px;
+            margin-left: 300px;
+            margin-top: 10px;
+    
+        }
+
+        #name::placeholder{
+            font-family: monospace;
+            font-size: 15px;
+        }
+
+        .txt1{
+            font-family: monospace;
+            font-size: 13px;
+            margin-left: 300px;
+           
+    
+        }
+
+        input[type=email]{
+            width: 270px;
+            padding: 15px;
+            border: 2px solid black;
+            margin-top: 10px;
+        }
+
+        input[type=email]::placeholder{
+            font-family: monospace;
+            font-size: 15px;
+        }
+
+        .txt2{
+            font-family: monospace;
+            font-size: 13px;
+             
+    
+        }
+
+        .fee{
+           display: flex;
+           
+        }
+
+        .h1-p h1{
+            font-family: monospace;
+            font-size: 13px;
+            margin-left: 300px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        .h1-p p{
+            font-family: monospace;
+        }
+
+        .cor{
+            background-color: black;
+            color: white;
+            padding: 15px;
+            font-size: 15px;
+            margin-left: -5px;
+            
+        }
+
+        .new{
+            max-width: 250%;
+            border: 2px solid black;
+            padding: 13px;
+            margin-left: -10px;
+            color: black;
+            font-size: 15px;
+        }
+
+        .feed{
+            border: 2px solid black;
+            padding: 13px;
+            margin-left: -10px;
+            border-left: none;
+            color: black;
+            font-size: 15px;
+        }
+
+        #topic{
+            width: 590px;
+            padding: 15px;
+            border: 2px solid black;
+            margin-right: 50px;
+            margin-left: 300px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        #topic::placeholder{
+            font-family: monospace;
+            font-size: 15px;
+        }
+
+        .top{
+            font-family: monospace;
+            font-size: 13px;
+            margin-left: 300px;
+         
+           
+        }
+
+        #details{
+            width: 590px;
+            height: 30vh;
+            margin-top: -370px;
+            border: 2px solid black;
+            margin-right: 50px;
+            margin-left: 300px;
+            margin-top: 10px;
+        }
+
+        #details::placeholder{
+            font-family: monospace;
+            font-size: 15px;
+          
+        }
+
+        .det{
+            font-family: monospace;
+            font-size: 13px;
+            margin-left: 300px;
+           
+           
+        }
+
+        #submit{
+            background-color: black;
+            color: white;
+            border: none;
+            width: 44%;
+            margin-left: 300px;
+            font-family: monospace;
+            font-size: 17px;
+            padding: 20px;
+            border: 2px solid black;
+        }
+
+        #submit:hover{
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+        }
+
+        .last-flex{
+            display: flex;
+            background-color: white;
+            margin-top: 70px;
+            width: 44%;
+            height: 15vh;
+            margin-left: 305px;
+            border-top: 2px solid black;
+        }
+
+        .last-flex p{
+            color: black;
+            margin-left: -2px;
+            margin-top: 40px;
+            font-size: 18px;
+            font-family: monospace;
+        }
+
+        .cheat:hover{
+            text-decoration: underline;
+        }
+
+        .last-flex a{
+            text-decoration: none;
+        }
+
+
+        .cheat{
+            margin-left:5px;
+        }
+
+        
+
+        
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+            <div class="header">
+            <h1>JuniorDev.<span class="span1">docs</span></h1>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../tutorial/"  >TUTORIALS</a></li>
+                    <li><a href="../cheatsheet/">CHEAT SHEET</a></li>
+                    <li><a href="../contribute/" class="contribute">CONTRIBUTE</a></li>
+
+                </ul>
+            
+            </div>
+        </nav>
+  
+    <div class="hero-section" >
+        <h3><span class="back-to-topic-symbol">&#8592;</span>BACK TO TOPICS</h3>
+        <h4>Community</h4>
+        <h1>Contribute</h1>
+        <p>Found an error? Have a topic suggestion? Help us make documentation that <br>doesn't suck.</p>
+
+        <form action="../submit/index.html">
+            <div class="fee">
+                <div>
+                    <label for="name" class="txt1">NAME</label> <br>
+                    <input type="text" id="name" placeholder="Your name" required><br>
+                </div>
+
+                <div>
+                    <label for="email" class="txt2">EMAIL</label> <br>
+                    <input type="email" id="email" placeholder="you@school.edu" required >
+                </div>
+            </div>
+             
+            <div class="h1-p">
+                <h1 class="type">TYPE</h1>
+               
+                <p><span class="cor">CORRECTION</span> <span class="new">NEW TOPIC</span> <span class="feed">FEEDBACK</span></p>
+            
+            </div>
+
+            <label for="topic" class="top">TOPIC</label><br>
+            <input type="text"  id="topic" placeholder="e.g CSS Grid React Hook" required><br>
+
+            
+            <label for="details" class="det">DETAILS</label><br>
+            <input type="text"  id="details" placeholder="Describe what you'd like to see changed or added..." required><br><br><br>  
+
+
+            
+            <button type="submit" id="submit">Submit Contribution</button>  
+             
+ 
+             
+        </form>
+
+        <div class="last-flex">
+            <a href="../cheatsheet/#Search">
+             <p> <span class="cheat">&#8592; CHEAT SHEET </span> </p> 
+            </a> 
+        </div>
+
+    </div>
+
+</body>
+</html>

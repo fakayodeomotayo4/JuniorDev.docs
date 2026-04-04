@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+       }
+      .navbar{
+            padding: 22px;
+            border-bottom: 2px solid black;
+        }      
+        
+    
+        .header{
+            width: 100%;
+            display: flex;    
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        .header h1{
+            font-size: 22px;
+            font-weight: 800;
+            margin-left: 150px;
+            font-family: monospace;
+         
+        }
+
+        .span1{
+            color: grey; 
+        }
+
+
+        ul{
+            list-style-type: none;
+            display: flex;
+            text-decoration: none;
+          
+        }
+
+        ul li a{
+            display: flex;
+            margin-right: 20px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-family: monospace;
+            font-size: 17px;
+            font-weight: 500;
+            color: black;
+            text-decoration: none;
+
+        }
+
+        .tutorial{
+            border-bottom: 1px solid black;
+        }
+
+        ul li a:hover{
+            border-bottom: 1px solid black;
+        }
+
+        .contribute{
+            margin-right: 250px;
+        }
+
+
+        .back-to-topic-symbol{
+            margin-right: 10px;
+        }
+
+        .hero-section h3{
+            font-size: 18px;
+            font-family: monospace;
+            color: rgba(49, 48, 48, 0.74); 
+            font-weight: 500;
+            margin-left: 300px;
+            margin-top: 50px;
+        }
+
+        .hero-section h4{
+            font-size: 15px;
+            font-family: monospace;
+            color: rgba(49, 48, 48, 0.74); 
+            font-weight: 500;
+            margin-left: 300px;
+            margin-top: 20px;
+            
+        }
+
+        .hero-section h1{
+            font-size: 50px;
+            font-family: monospace;
+            margin-left: 305px;
+            margin-top: 10px;
+          
+            
+        }
+
+        .hero-section p{
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgba(49, 48, 48, 0.685); 
+            margin-left: 305px;
+            margin-top: 10px;
+        }
+
+        .border1{
+            width: 52%;
+            border-top: 1px solid rgba(128, 128, 128, 0.377);
+            margin-left: 300px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+
+        .array h1{
+            font-size: 28px;
+            font-family: monospace;
+           
+        }
+
+        .array p{
+            font-size: 17px;
+            color: black;
+            margin-left: 307px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .array-div{
+            background-color: rgba(128, 128, 128, 0.13);
+            margin-top: 40px;
+            width: 52%;
+            height: 35vh;
+            margin-left: 300px;
+            border: 1px solid rgba(128, 128, 128, 0.664);
+            
+          
+        }
+
+
+        .array-div p{
+            margin-left: 10px;
+            font-size: 15px;
+            margin-bottom: 10px;
+            font-family: monospace;
+            padding-top: 20px;
+             
+          
+        }
+
+        .add-remove h1{ 
+            margin-top: 50px;
+            font-size: 28px;
+            font-family: monospace;
+           
+        }
+
+        .add-remove p{
+            font-size: 17px;
+            color: black;
+            margin-left: 307px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        .add-remove div{ 
+            background-color: rgba(128, 128, 128, 0.13);
+            margin-top: 10px;
+            padding-top: 20px;
+            padding-left: 15px;
+            width: 52%;
+            height: 55vh;
+            margin-left: 300px;
+            font-size: 17px;
+            font-family: monospace;
+            border: 1px solid rgba(128, 128, 128, 0.664);
+        }
+
+        .map-info h1{ 
+            margin-top: 50px;
+            font-size: 28px;
+            font-family: monospace;
+           
+        }
+
+        .map-info p{ 
+            font-size: 17px;
+            color: black;
+            line-height: 1.8;
+            margin-left: 307px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .map-div{
+            background-color: rgba(128, 128, 128, 0.13);
+            margin-top: 10px;
+            padding-top: 20px;
+            padding-left: 15px;
+            width: 52%;
+            height: 40vh;
+            margin-left: 300px;
+            font-size: 17px;
+            font-family: monospace;
+            border: 1px solid rgba(128, 128, 128, 0.664);
+        }
+
+        .find-info h1{ 
+            margin-top: 50px;
+            font-size: 28px;
+            font-family: monospace;
+           
+        }
+
+        .find-info p{ 
+            font-size: 17px;
+            color: black;
+            margin-left: 307px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .find-div{ 
+            background-color: rgba(128, 128, 128, 0.13);
+            margin-top: 10px;
+            padding-top: 10px;
+            padding-left: 15px;
+            width: 52%;
+            height: 45vh;
+            margin-left: 300px;
+            font-size: 17px;
+            font-family: monospace;
+            border: 1px solid rgba(128, 128, 128, 0.664);;
+        }
+
+        .note h1{ 
+            margin-left: 10px;
+            font-size: 15px;
+            font-family: monospace;
+            padding-top: 10px;
+        }
+
+        .note p{ 
+            margin-top: 5px;
+            margin-left: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+
+        .note{ 
+            background-color: rgba(128, 128, 128, 0.13);
+            margin-top: 40px;
+            width: 52%;
+            height: 17vh;
+            margin-left: 300px;
+            border-left: 4px solid black;
+        }
+
+
+
+        .chaining-info h1{ 
+            margin-top: 50px;
+            font-size: 28px;
+            font-family: monospace;
+           
+        }
+
+        .chaining-info p{ 
+            font-size: 17px;
+            color: black;
+            line-height: 1.8;
+            margin-left: 307px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .chaining-div{
+           background-color: rgba(128, 128, 128, 0.13);
+            margin-top: 10px;
+            padding-top: 20px;
+            padding-left: 15px;
+            width: 52%;
+            height: 50vh;
+            margin-left: 300px;
+            font-size: 17px;
+            font-family: monospace;
+            border: 1px solid rgba(128, 128, 128, 0.664)
+        }
+
+         
+        .last-flex{
+            display: flex;
+            background-color: white;
+            margin-top: 70px;
+            width: 51%;
+            height: 15vh;
+            margin-left: 305px;
+            border-top: 2px solid black;
+        }
+
+        .last-flex p{
+            color: black;
+            margin-left: -2px;
+            margin-top: 40px;
+            font-size: 18px;
+            font-family: monospace;
+        }
+
+        .last:hover{
+            text-decoration: underline;
+        }
+
+        .last-flex a{
+            text-decoration: none;
+        }
+
+
+        .cheat{
+            margin-left: 445px;
+        }
+
+        .cheat:hover{
+            text-decoration: underline;
+        }
+        
+
+
+
+
+
+    </style>
+</head>
+<body>
+   
+        <nav class="navbar">
+            <div class="header">
+            <h1>JuniorDev.<span class="span1">docs</span></h1>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../tutorial/" class="tutorial">TUTORIALS</a></li>
+                    <li><a href="../cheatsheet/">CHEAT SHEET</a></li>
+                    <li><a href="../contribute/" class="contribute">CONTRIBUTE</a></li>
+
+                </ul>
+            
+            </div>
+        </nav>
+  
+    <div class="hero-section" >
+        <h3><span class="back-to-topic-symbol">&#8592;</span>BACK TO TOPICS</h3>
+        <h4>TUTORIAL</h4>
+        <h1 id="js">JavaScript Arrays</h1>
+        <p>map, filter, reduce — the holy trinity. Learn them once, use them forever.</p>
+
+        <div class="array">
+            <div class="border1"></div>
+            <h1>Arrays 101</h1>
+            <p>An array is an ordered list of values. It can hold numbers, strings, objects — anything.</p>
+
+            <div class="array-div">
+                <p>const fruits = ["apple", "banana", "cherry"];<br>
+                const numbers = [1, 2, 3, 4, 5];<br>
+                const mixed = ["hello", 42, true, { name: "Ada" }];<br><br>
+
+                // Access by index (starts at 0)<br>
+                fruits[0]; // "apple"<br>
+                fruits[2]; // "cherry"<br><br>
+
+                // Length<br>
+                fruits.length; // 3</p>
+            </div>
+        </div>
+
+        <div class="add-remove">
+            <h1>Adding & Removing</h1>
+             
+            <div class="add-remove">
+               const arr = [1, 2, 3];<br><br>
+
+                // Add to end<br>
+                arr.push(4);        // [1, 2, 3, 4]<br><br>
+
+                // Remove from end<br>
+                arr.pop();          // [1, 2, 3]<br><br>
+
+                // Add to beginning<br>
+                arr.unshift(0);     // [0, 1, 2, 3]<br><br>
+
+                // Remove from beginning<br>
+                arr.shift();        // [1, 2, 3]<br><br>
+
+                // Remove/insert at any position<br>
+                arr.splice(1, 1);   // removes 1 item at index 1 → [1, 3]   
+            </div>
+
+        </div>
+
+        <div class="map-info">
+            <h1>.map() — Transform Every Item</h1>
+            <p>Creates a <strong> new array </strong>by running a function on every item. The original array is untouched.
+            </p>
+
+            <div class="map-div">
+                const numbers = [1, 2, 3, 4];<br><br>
+
+                const doubled = numbers.map(n => n * 2);<br>
+                // [2, 4, 6, 8]<br><br>
+
+                const names = ["ada", "grace", "margaret"];<br>
+                const capitalized = names.map(name => <br>
+                name.charAt(0).toUpperCase() + name.slice(1)<br>
+                );<br>
+                // ["Ada", "Grace", "Margaret"]
+            </div>
+
+            <div class="note">
+                <h1>Note</h1>
+                <p>
+                    The second argument to .reduce() is the initial value. 
+                    Always provide it to avoid unexpected behavior with empty arrays.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="find-info">
+            <h1>.find() & .includes()</h1>
+            <div class="find-div">
+              const numbers = [1, 2, 3, 4, 5];<br><br>
+
+                // Find first match<br>
+                numbers.find(n => n > 3);     // 4<br><br>
+
+                // Check if value exists<br>
+                numbers.includes(3);          // true<br>
+                numbers.includes(99);         // false<br><br>
+
+                // Find index of first match<br>
+                numbers.findIndex(n => n > 3); // 3
+            </div>
+
+           
+
+        </div>
+
+        <div class="chaining-info">
+            <h1>Chaining Methods</h1>
+            <p>The real power comes from combining these methods:</p>
+
+            <div class="chaining-div">
+               const students = [<br>
+                { name: "Ada", grade: 92 },<br>
+                { name: "Grace", grade: 78 },<br>
+                { name: "Alan", grade: 95 },<br>
+                { name: "Linus", grade: 64 },<br>
+                ];<br><br>
+
+                // Get names of students who passed (grade >= 70), sorted<br>
+                const honor = students<br>
+                .filter(s => s.grade >= 70)<br>
+                .map(s => s.name)<br>
+                .sort();<br>
+                // ["Ada", "Alan", "Grace"]
+            </div>
+        </div>
+
+
+        
+        <div class="last-flex">
+            <a href="../git basic/index.html#Mistakes"> 
+             <p class="last"> &#8592; GIT BASICS</p>
+            </a>
+
+            <a href="../cheatsheet/#shit">
+             <p> <span class="cheat"> CHEAT SHEET &#8594;</span> </p>
+            </a> 
+        </div>
+
+
+    </div>
+</body>
+</html> 

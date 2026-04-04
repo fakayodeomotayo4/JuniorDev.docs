@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+       }
+      .navbar{
+            padding: 22px;
+            border-bottom: 2px solid black;
+        }      
+        
+    
+        .header{
+            width: 100%;
+            display: flex;    
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        .header h1{
+            font-size: 22px;
+            font-weight: 800;
+            margin-left: 150px;
+            font-family: monospace;
+         
+        }
+
+        .span1{
+            color: grey; 
+        }
+
+
+        ul{
+            list-style-type: none;
+            display: flex;
+            text-decoration: none;
+          
+        }
+
+        ul li a{
+            display: flex;
+            margin-right: 20px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-family: monospace;
+            font-size: 17px;
+            font-weight: 500;
+            color: black;
+            text-decoration: none;
+
+        }
+
+        .tutorial{
+            border-bottom: 1px solid black;
+        }
+
+        ul li a:hover{
+            border-bottom: 1px solid black;
+        }
+
+        .contribute{
+            margin-right: 250px;
+        }
+
+
+        .back-to-topic-symbol{
+            margin-right: 10px;
+        }
+
+        .hero-section h3{
+            font-size: 18px;
+            font-family: monospace;
+            color: rgba(49, 48, 48, 0.74); 
+            font-weight: 500;
+            margin-left: 300px;
+            margin-top: 50px;
+        }
+
+        .hero-section h4{
+            font-size: 15px;
+            font-family: monospace;
+            color: rgba(49, 48, 48, 0.74); 
+            font-weight: 500;
+            margin-left: 300px;
+            margin-top: 20px;
+            
+        }
+
+        .hero-section h1{
+            font-size: 50px;
+            font-family: monospace;
+            margin-left: 305px;
+            margin-top: 10px;
+          
+            
+        }
+
+        .hero-section p{
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgba(49, 48, 48, 0.685); 
+            margin-left: 305px;
+            margin-top: 10px;
+        }
+
+        .border1{
+            width: 52%;
+            border-top: 1px solid rgba(128, 128, 128, 0.377);
+            margin-left: 300px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+
+        .flex-box h1{
+            font-size: 28px;
+            font-family: monospace;
+           
+        }
+
+        .flex-box p{
+            font-size: 17px;
+            color: black;
+            margin-left: 307px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .note{
+            background-color: rgba(128, 128, 128, 0.13);
+            margin-top: 40px;
+            width: 51%;
+            height: 15vh;
+            margin-left: 310px;
+            border-left: 4px solid black;
+          
+        }
+
+        .note h1{
+            margin-left: 10px;
+            font-size: 15px;
+            font-family: monospace;
+            padding-top: 20px;
+        }
+
+        .note p{
+            margin-left: 10px;
+            font-size: 15px;
+            margin-bottom: 10px;
+          
+        }
+
+        .getting-started-info h1{ 
+            margin-top: 50px;
+            font-size: 28px;
+            font-family: monospace;
+           
+        }
+
+        .getting-started-info p{
+            font-size: 17px;
+            color: black;
+            margin-left: 307px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .display{
+            background-color: rgba(128, 128, 128, 0.13);
+            padding: 5px;
+            border: 1px solid rgba(128, 128, 128, 0.664);
+            margin-right: 5px;
+        }
+
+        .getting-started-div{ 
+            background-color: rgba(128, 128, 128, 0.13);
+            margin-top: 10px;
+            padding-top: 20px;
+            padding-left: 15px;
+            width: 51%;
+            height: 25vh;
+            margin-left: 310px;
+            font-size: 17px;
+            font-family: monospace;
+            border: 1px solid rgba(128, 128, 128, 0.664);
+        }
+
+        .direction-info h1{ 
+            margin-top: 50px;
+            font-size: 28px;
+            font-family: monospace;
+           
+        }
+
+        .direction-info p{ 
+            font-size: 17px;
+            color: black;
+            line-height: 1.8;
+            margin-left: 307px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .direction-div{
+            background-color: rgba(128, 128, 128, 0.13);
+            margin-top: 10px;
+            padding-top: 20px;
+            padding-left: 15px;
+            width: 51%;
+            height: 27vh;
+            margin-left: 310px;
+            font-size: 17px;
+            font-family: monospace;
+            border: 1px solid rgba(128, 128, 128, 0.664);
+        }
+
+        .alignment-info h1{ 
+            margin-top: 50px;
+            font-size: 28px;
+            font-family: monospace;
+           
+        }
+
+        .alignment-info p{ 
+            font-size: 17px;
+            color: black;
+            margin-left: 307px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .alignment-div{ 
+            background-color: rgba(128, 128, 128, 0.13);
+            margin-top: 10px;
+            padding-top: 10px;
+            padding-left: 15px;
+            width: 51%;
+            height: 45vh;
+            margin-left: 310px;
+            font-size: 17px;
+            font-family: monospace;
+            border: 1px solid rgba(128, 128, 128, 0.664);;
+        }
+
+        .pro-tip-info h1{ 
+            margin-left: 10px;
+            font-size: 15px;
+            font-family: monospace;
+            padding-top: 10px;
+        }
+
+        .pro-tip-info p{ 
+            margin-top: 5px;
+            margin-left: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+
+        .pro-tip-info{ 
+            background-color: rgba(128, 128, 128, 0.13);
+            margin-top: 40px;
+            width: 51%;
+            height: 17vh;
+            margin-left: 310px;
+            border-left: 4px solid black;
+        }
+
+        .justify{
+            background-color: rgba(128, 128, 128, 0.13);
+            border: 1px solid rgba(128, 128, 128, 0.664);
+            padding: 5px;
+        }
+
+        .align{
+            background-color: rgba(128, 128, 128, 0.13);
+            border: 1px solid rgba(128, 128, 128, 0.664);
+            padding: 5px;
+        }
+
+
+
+        .flex-grow-info h1{ 
+            margin-top: 50px;
+            font-size: 28px;
+            font-family: monospace;
+           
+        }
+
+        .flex-grow-info p{ 
+            font-size: 17px;
+            color: black;
+            line-height: 1.8;
+            margin-left: 307px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .flex-grow-div{
+           background-color: rgba(128, 128, 128, 0.13);
+            margin-top: 10px;
+            padding-top: 20px;
+            padding-left: 15px;
+            width: 51%;
+            height: 37vh;
+            margin-left: 305px;
+            font-size: 17px;
+            font-family: monospace;
+            border: 1px solid rgba(128, 128, 128, 0.664)
+        }
+
+        .pattern-info h1{ 
+            margin-top: 50px;
+            font-size: 28px;
+            font-family: monospace;
+           
+        }
+
+        .pattern-info p{ 
+            font-size: 17px;
+            color: black;
+            line-height: 1.8;
+            margin-left: 307px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+       
+
+        .navigation-info h1{ 
+            margin-top: 10px;
+            font-size: 23px;
+            font-family: monospace;
+           
+        }
+
+        .navigation-div{
+            background-color: rgba(128, 128, 128, 0.13);
+            margin-top: 10px;
+            padding-top: 20px;
+            padding-left: 15px;
+            width: 51%;
+            height: 27vh;
+            margin-left: 305px;
+            font-size: 17px;
+            font-family: monospace;
+            border: 1px solid rgba(128, 128, 128, 0.664);
+        }
+
+        .card-info h1{ 
+            margin-top: 50px;
+            font-size: 23px;
+            font-family: monospace;
+           
+        }
+
+       
+        .card-div{
+           background-color: rgba(128, 128, 128, 0.13);
+            margin-top: 10px;
+            padding-top: 20px;
+            padding-left: 15px;
+            width: 51%;
+            height: 35vh;
+            margin-left: 305px;
+            font-size: 17px;
+            font-family: monospace;
+            border: 1px solid rgba(128, 128, 128, 0.664)
+        }
+
+        .footer-info h1{ 
+            margin-top: 50px;
+            font-size: 23px;
+            font-family: monospace;
+           
+        }
+
+       
+        .footer-div{
+            background-color: rgba(128, 128, 128, 0.13);
+            margin-top: 10px;
+            padding-top: 20px;
+            padding-left: 15px;
+            width: 51%;
+            height: 35vh;
+            margin-left: 305px;
+            font-size: 17px;
+            font-family: monospace;
+            border: 1px solid rgba(128, 128, 128, 0.664)
+        }
+
+        .last-flex{
+            display: flex;
+            background-color: white;
+            margin-top: 70px;
+            width: 51%;
+            height: 15vh;
+            margin-left: 305px;
+            border-top: 2px solid black;
+        }
+
+        .last-flex p{
+            color: black;
+            margin-left: -2px;
+            margin-top: 40px;
+            font-size: 18px;
+            font-family: monospace;
+        }
+
+        .last:hover{
+            text-decoration: underline;
+        }
+
+        .last-flex a{
+            text-decoration: none;
+        }
+
+
+        .cheat{
+            margin-left: 445px;
+        }
+
+        .cheat:hover{
+            text-decoration: underline;
+        }
+        
+
+
+
+
+
+    </style>
+</head>
+<body>
+   
+        <nav class="navbar">
+            <div class="header">
+            <h1>JuniorDev.<span class="span1">docs</span></h1>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../tutorial/" class="tutorial">TUTORIALS</a></li>
+                    <li><a href="../cheatsheet/">CHEAT SHEET</a></li>
+                    <li><a href="../contribute/" class="contribute">CONTRIBUTE</a></li>
+
+                </ul>
+            
+            </div>
+        </nav>
+  
+    <div class="hero-section" >
+        <h3><span class="back-to-topic-symbol">&#8592;</span>BACK TO TOPICS</h3>
+        <h4>TUTORIAL</h4>
+        <h1>CSS Flexbox</h1>
+        <p>The complete beginner's guide to flexible layouts.
+        No prior CSS layout knowledge required.</p>
+
+        <div class="flex-box">
+            <div class="border1"></div>
+            <h1>What is Flexbox?</h1>
+            <p>Flexbox is a CSS layout method that lets you arrange items in a row 
+            or column. It handles <br> spacing, alignment, and ordering — all the things
+            that used to require hacks with floats and <br> positioning.</p>
+
+            <div class="note">
+                <h1>NOTE</h1>
+                <p>Flexbox works in one dimension at a time — either
+                a row <strong> or </strong>a column. If you need two-dimensional<br>  layouts,
+                look into CSS Grid.</p>
+            </div>
+        </div>
+
+        <div class="getting-started-info">
+            <h1 id="flexbox">Getting Started</h1>
+            <p>To use Flexbox, you apply <span class="display">display: flex </span>to a parent container. 
+            All direct children become <br> "flex items."</p>
+
+            <div class="getting-started-div">
+                .container { <br>
+                 display: flex; <br>
+                } <br> <br>
+
+                /* That's it. Your items are now in a row. */ 
+                Direction
+            </div>
+
+        </div>
+
+        <div class="direction-info">
+            <h1 id="direction">Direction</h1>
+            <p>By default, flex items lay out in a row (left to right). You can change this
+             with <span class="display">flex- <br> direction.</span>
+            </p>
+
+            <div class="direction-div">
+                .container { <br>
+                display: flex; <br>
+                flex-direction: column; /* Stack items vertically */ <br>
+                } <br> <br>
+
+                /* Options: row | row-reverse | column | column-reverse */
+            </div>
+
+        </div>
+
+        <div class="alignment-info">
+            <h1>Alignment</h1>
+            <p>This is where Flexbox really shines. Two properties handle most alignment needs:</p>
+
+            <div class="alignment-div">
+              .container { <br>
+                display: flex; <br>
+                justify-content: center; /* Horizontal alignment */ <br>
+                align-items: center;     /* Vertical alignment */ <br>
+                } <br> <br>
+
+                /* justify-content options: <br>
+                flex-start | flex-end | center | <br>
+                space-between | space-around | space-evenly */ <br> <br>
+
+                /* align-items options: <br>
+                flex-start | flex-end | center | <br>
+                stretch | baseline */
+            </div>
+
+            <div class="pro-tip-info">
+                <h1>Pro Tip</h1>
+                <p>To perfectly center something both horizontally and vertically, use 
+                    <span class="justify">justify-content: center</span> and <span class="align"> align-items:
+                    center</span> together. This is the easiest centering method in CSS.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="flex-grow-info">
+            <h1>Flex Grow, Shrink & Basis</h1>
+            <p>These three properties control how items resize:</p>
+
+            <div class="flex-grow-div">
+                .item { <br>
+                flex-grow: 1;   /* How much to grow relative to siblings */ <br>
+                flex-shrink: 0; /* How much to shrink (0 = don't shrink) */ <br>
+                flex-basis: 200px; /* Starting size before growing/shrinking */ <br>
+                } <br> <br>
+
+                /* Shorthand: */ <br>
+                .item { <br>
+                flex: 1 0 200px; /* grow shrink basis */ <br>
+                }
+            </div>
+        </div>
+
+
+        <div class="pattern-info">
+            <h1>Common Patterns</h1>
+            <p>Here are layouts you'll use every day:</p>
+        </div>
+
+        <div class="navigation-info">
+            <h1>Navigation Bar</h1>
+           
+            <div class="navigation-div">
+                nav { <br>
+                display: flex; <br>
+                justify-content: space-between; <br>
+                align-items: center; <br>
+                }
+            </div>
+        </div>
+
+        <div class="card-info">
+            <h1>Card Grid</h1>
+           
+            <div class="card-div">
+               .cards { <br>
+                display: flex; <br>
+                flex-wrap: wrap; <br>
+                gap: 1rem; <br>
+                } <br> <br>
+
+                .card { <br>
+                flex: 1 1 300px; /* Grow, shrink, min 300px */ <br>
+                }
+            </div>
+        </div>
+
+
+        <div class="footer-info">
+            <h1>Sticky Footer</h1>
+           
+            <div class="footer-div">
+                 body { <br>
+                display: flex; <br>
+                flex-direction: column; <br>
+                min-height: 100vh; <br>
+                } <br> <br>
+
+                main { <br>
+                flex: 1; /* Takes all available space */ <br>
+                }           
+            </div>
+        </div>
+
+        <div class="last-flex">
+            <a href="../contribute/#details"> 
+             <p class="last"> &#8592; ALL TOPICS</p>
+            </a>
+
+            <a href="../cheatsheet/#shit">
+             <p> <span class="cheat"> CHEAT SHEET &#8594;</span> </p>
+            </a> 
+        </div>
+
+
+    </div>
+</body>
+</html> 
