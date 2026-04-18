@@ -173,33 +173,38 @@
             font-family: monospace;
         }
 
-        .cor{
+        .btn-group{
+            margin-left: 300px;
+        }
+
+        .active{
             background-color: black;
             color: white;
-            padding: 15px;
+            padding: 13px;
             font-size: 15px;
-            margin-left: -5px;
+            margin-left: 300px;
+            border: none;
+            border: 2px solid black;
             
         }
 
-        .new{
+        .btn{
             max-width: 250%;
-            border: 2px solid black;
             padding: 13px;
-            margin-left: -10px;
-            color: black;
             font-size: 15px;
+            margin-left: -5px;
+            cursor: pointer;
+
         }
 
-        .feed{
-            border: 2px solid black;
-            padding: 13px;
-            margin-left: -10px;
-            border-left: none;
+        .not-active{
+            background-color: white;
             color: black;
-            font-size: 15px;
+            border: 2px solid black;
+           
         }
 
+    
         #topic{
             width: 590px;
             padding: 15px;
@@ -338,17 +343,31 @@
              
             <div class="h1-p">
                 <h1 class="type">TYPE</h1>
-               
-                <p><span class="cor">CORRECTION</span> <span class="new">NEW TOPIC</span> <span class="feed">FEEDBACK</span></p>
+                <div class="btn-group">
+                 <button class="btn active" onclick="toggleBtn(this)">CORRECTION</button> 
+                 <button class="btn"  onclick="toggleBtn(this)">NEW TOPIC </button> 
+                 <button class="btn"  onclick="toggleBtn(this)">FEEDBACK</button>
+                </div>
             
             </div>
+
+            <script>
+                function toggleBtn(btn){
+                const btns = document.querySelectorAll('.btn');
+                btns.forEach(b => b.classList.remove('active'));
+                btns.forEach(b => b.classList.add('not-active'));
+                btn.classList.remove('not-active');
+                btn.classList.add('active');
+
+            }
+            </script>
 
             <label for="topic" class="top">TOPIC</label><br>
             <input type="text"  id="topic" placeholder="e.g CSS Grid React Hook" required><br>
 
             
-            <label for="details" class="det">DETAILS</label><br>
-            <input type="text"  id="details" placeholder="Describe what you'd like to see changed or added..." required><br><br><br>  
+            
+            <textarea  id="details" placeholder="Describe what you'd like to see changed or added..." required></textarea> 
 
 
             
